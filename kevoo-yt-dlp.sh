@@ -25,7 +25,7 @@ done
 
 # Check if the URL is for a playlist or a single video
 if [[ $url == *"playlist"* ]]; then
-  # Download the entire playlist
+  # Download the entire playlist ok
   yt-dlp -f "$format" --playlist $url
 else
   # Download the single video
